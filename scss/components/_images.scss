@@ -1,0 +1,9 @@
+body {
+    background: url(../images/pattern-background-mobile.svg) center center/cover no-repeat, $pale-blue;
+}
+
+.main-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}

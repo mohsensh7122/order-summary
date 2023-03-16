@@ -1,0 +1,74 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: $pale-blue;
+    
+}
+
+.container {
+
+    background-color: white;
+    text-align: center;
+    width: 80%;
+    height: 600px;
+    border-radius: 10px;
+    @include center;
+    font-size: $body-font;
+    font-weight: $font-light;
+    max-width: 400px;
+
+    h1.main-title {
+        color: $dark-blue;
+        margin: $gutter 0;
+        font-weight: $font-bold;
+        font-size: 22px;
+    }
+
+    p.description {
+        color: $desaturated-blue;
+        margin: $gutter 0;
+        padding: 0 20px;
+        line-height: 28px;
+    }
+
+
+    div.plan-box {
+        width: 75%;
+        @include flexy(row, space-between, center);
+        margin: $gutter auto;
+        padding: 10px 20px;
+        background-color: $very-pale-blue;
+        border-radius: 10px;
+
+        &-price h2 {
+            margin-bottom: 5px;
+            font-weight: $font-bold;
+            color: $dark-blue;
+        }
+
+        .price {
+            color: $desaturated-blue;
+            margin-left: -6px;
+        }
+    }
+
+    button.payment-button {
+        color: white;
+        background-color: $bright-blue;
+        width: 75%;
+        padding: 20px 20px;
+        border-radius: 10px;
+        font-weight: $font-bold;
+        border: none;
+        margin: $gutter auto;
+        font-size: 17px;
+    }
+
+    a.cancel-button {
+        color: $desaturated-blue;
+        font-weight: $font-bold;
+        text-decoration: none;
+    }
+
+}
+
+
